@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibecode.ai | Post an Opening</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <header class="glass-header">
+        <div class="logo">
+            <svg class="header-logo-svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="color: var(--primary-blue); margin-right: 8px;">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            Vibecode.ai
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Current Openings</a>
+            <a href="post-job.html" class="btn-primary" style="box-shadow: none;">Post a Job</a>
+        </nav>
+    </header>
+
+    <main class="page-transition" style="padding-top: 4rem;">
+        <section id="post-job" class="post-job-section glass-panel">
+            <h2>Post a New Position</h2>
+            <p>Publish an open engineering or operations role into the Vibecode system.</p>
+            <br>
+            <form id="job-form">
+                <div class="input-group">
+                    <label for="title">Job Title</label>
+                    <input type="text" id="title" required placeholder="e.g. Senior Machine Learning Engineer">
+                </div>
+                <div class="input-group">
+                    <label for="company_name">Company Name</label>
+                    <input type="text" id="company_name" required value="Vibecode.ai Technologies" readonly
+                        style="background: #f0f0f0; cursor: not-allowed; color: #888;">
+                </div>
+                <div class="input-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" required placeholder="e.g. Remote, San Francisco">
+                </div>
+                <div class="input-group">
+                    <label for="description">Job Description</label>
+                    <textarea id="description" rows="4" required
+                        placeholder="Describe the role and requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" id="submit-btn"
+                    style="width: 100%; font-size: 1.1rem; padding: 1rem;">Publish Job ✨</button>
+            </form>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="jobs.html" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">&larr;
+                    View Openings</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vibecode.ai Technologies. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
