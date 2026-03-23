@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
 class Job(SQLModel, table=True):
+    __tablename__ = "job_render"
     id: int | None = Field(default=None, primary_key=True)
     title: str
     company_name: str
